@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/home.css">
+    <title>CF-Inicio</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<body>
+
+
+    <div class="cont">
+        <div class="Ocultos">
+            <div class="primero">Noticias</div>
+            <div class="segundo"> Quienes somos</div>
+            <div class="tercero"> Contactanos</div>
+            <div class="cuarto"> Recursos Humanos</div>
+        </div>
+        <div class="div3">
+            <a href="Noticias.html">
+                <div class="top selector" id="primero"><img src="img/inicio/cfarriba2.png"></div>
+            </a>
+            <div class="center "> <img src="img/logo.png"></div>
+            <a href="QuienesSomos.html">
+                <div class="bottom selector" id="segundo"> <img src="img/inicio/cfabajo2.png"></div>
+            </a>
+            <a href="Contacto.html">
+                <div class="left selector" id="tercero"> <img src="img/inicio/cfizquierda2.png"></div>
+            </a>
+            <a href="CV.html">
+                <div class="right selector" id="cuarto"> <img src="img/inicio/cfderecha2.png"></div>
+            </a>
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".selector").hover(function() {
+                var id = $(this).attr("id");
+                $("." + id).show("fast");
+            }, function() {
+
+                var id = $(this).attr("id");
+                $("." + id).hide("fast");
+            })
+        });
+    </script>
+</body>
+
+</html>

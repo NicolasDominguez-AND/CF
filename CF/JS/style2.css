@@ -1,0 +1,59 @@
+body {
+    color: white;
+    background: black;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 125px);
+}
+
+header {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+audio {
+    height: 20px;
+}
+
+div {
+    background-color: rgba(14, 14, 14, 0.89);
+    box-shadow: inset 0px 0px 110px rgb(0, 0, 0);
+    opacity: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: ;
+    color: white;
+    border: none;
+}
+
+#caja1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#caja5 {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+#caja6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#caja11 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: -1;
+}
+
+#caja12 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}

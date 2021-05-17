@@ -1,0 +1,38 @@
+main>* {
+    background-color: goldenrod;
+    padding: 10px;
+    font-size: 3em;
+    font-size-adjust: -25%;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "header" "div" "article" "aside" "footer";
+    grid-gap: 5px;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+div {
+    grid-area: div;
+}
+
+aside {
+    grid-area: aside;
+}
+
+article {
+    grid-area: article;
+}
+
+@media (min-width:500px) {
+    main {
+        grid-template-areas: "header header header header" "aside article article div" "footer footer footer footer ";
+    }
+}
